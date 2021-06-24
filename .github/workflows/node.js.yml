@@ -38,8 +38,6 @@ jobs:
         name: webpack artifacts
         path: public
     - name: npm install, and test
-      with:
-        node-version: ${{ matrix.node-version }}
       run: |
         npm install
         npm test
